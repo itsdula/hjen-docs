@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HJEN — System Documentation</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23d8a24a'/><text x='16' y='23' font-size='20' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='%231a1205'>H</text></svg>" />
+</head>
+<body>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  <div class="backdrop" id="backdrop"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <h1><span class="mark">H</span> HJEN Docs</h1>
+        <div class="sub">System map · architecture · security</div>
+      </div>
+      <div class="search-box">
+        <input id="search" type="search" placeholder="Search the docs…" autocomplete="off" />
+      </div>
+      <nav id="nav"></nav>
+    </aside>
+    <main class="content">
+      <div class="reader" id="reader"><p>Loading…</p></div>
+      <aside class="toc" id="toc"></aside>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
